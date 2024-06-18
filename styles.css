@@ -41,7 +41,9 @@ body,html {
 }
 
 .navbar-menu a:hover {
-    background-color: #555;
+    border-radius: 5px;
+    background-color: #fff5f5;
+    color: #333;
 }
 
 .navbar-right {
