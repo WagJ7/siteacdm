@@ -204,3 +204,11 @@ footer {
     width: 60px;
     right: auto;
 }
+
+.footer-copyright {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
