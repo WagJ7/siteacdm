@@ -3,18 +3,22 @@
 }
 
 body,html {
+    background:linear-gradient(#00000038, #ccc,#222,#ffffff);
     font-family: Arial, sans-serif;
     margin: 10;
     padding: 0;
 }
 
 .navbar {
+    width: 95%;
+    position: fixed;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #333;
     padding: 10px 20px;
+
 }
 
 .navbar-logo {
@@ -90,13 +94,14 @@ span {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
-
+    /* Ajuste Imagem Banner*/
 .img-Baner {
-    padding-top: 6px;
-    max-width: 100%;
-    max-height: 50%;
-    margin: 3px;
-    border-radius: 8px;
+    background-color: transparent;
+    padding-top: 6%;
+
+
+    
+    border-radius: 10px;
 }
 
 .content {
@@ -106,6 +111,7 @@ span {
  /* stilo da letra do span acima do baner */
 .parte2 {
     color: brown;
+    background-color: transparent;
 }
 
     /* stilos do rodape da página inicio */
@@ -194,7 +200,15 @@ main {
     margin-top: 0;
 }
 
+.icon-whats {
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
 .icon-whats-img {
+    padding: 30px;
+    background-color: transparent;
     width: 50px;
     right: auto;
 }
@@ -205,4 +219,80 @@ main {
     padding: 10px 0;
     font-size: 14px;
     margin-top: 20px;
+}
+
+
+/* stilo menu */
+
+
+.menu {
+    display: flex;display: block;
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    left: 50%;
+    top: 4%;    
+}
+
+.menu-item {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    transition: background-color 0.4s;
+    font-size: 18px;
+}
+
+.menu-item:hover {
+    background-color: #504f4f00;
+}
+
+.menu-content {
+    text-align: end;
+    border-radius: 8px;
+    display: none;
+    background-color: #332c2ce3;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.menu-content a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    scrollbar-shadow-color: #222;
+    border: 1px solid#000000;
+}
+
+.menu-content a:hover {
+    background-color: #00000038;
+}
+
+.menu-item.active + .menu-content {
+    display: block;
+    max-height: 500px; /* Ajuste conforme necessário */
+}
+
+.icon-menu {
+    height: 25px; 
+    width: 25px;  
+    cursor: pointer; 
+}
+
+.texto-busca {
+    text-align: end;
+    padding: 5px 15px;
+    background-color: #cccccc00;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin: 0%;
+}
+
+#teste {
+    color: white;
 }
