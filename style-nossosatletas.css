@@ -1,14 +1,10 @@
-*  {
+* {
     text-decoration: none;
-}
-
-body {
-    background:linear-gradient(#000000, #ccc,#222,#ffffff);
 }
 
 
 .navbar {
-    width: 100%;
+    width: 95%;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -166,8 +162,7 @@ span {
 
 
 
-.atleta {
-    color: #000000;
+.img-professor {
     margin-top: 5%;
     display: flex;
     min-width: 150px;
@@ -178,44 +173,18 @@ span {
     border-radius: 17px;    
 }
 
-.atletas {
-    margin: 1px;
-    color: #000000;
+.professor {
+ 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     background-color: #6b6969;
     list-style: none;
     margin: 3px;
     border-radius: 17px;
 }
 
-.nossosAtletas {
-    color: #000000;
-    text-align: center;
-}
-.content-atleta {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 5px;
-    background-color: #ccc;
-    padding: 2px;
-    border-radius: 8px;
-}
-
-p {
-    border-radius: 5px;
-    background-color: #000000;
-    color: #ccc;
-    margin: 3px;
-
-}
-
-.apresentacao {
-    text-align: center;
-    background-color: #ccc;
-    border-radius: 8px;
-    font-size: 15px;
-    width: 100%;
+.professores {
+    
+    justify-content: space-between;
 }
 
 .footer-copyright {
@@ -225,7 +194,6 @@ p {
     font-size: 14px;
     margin-top: 20px;
 }
-
 
 .icon-whats {
     justify-content: space-between;
