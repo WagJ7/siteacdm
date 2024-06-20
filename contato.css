@@ -3,11 +3,11 @@
 }
 
 body,html {
+    background:linear-gradient(#00000038, #ccc,#222,#ffffff);
     font-family: Arial, sans-serif;
     margin: 10;
     padding: 0;
 }
-
 .navbar {
     border-radius: 15px;
     display: flex;
@@ -211,4 +211,7 @@ footer {
     padding: 10px 0;
     font-size: 14px;
     margin-top: 20px;
+}
+#teste {
+    color: white;
 }

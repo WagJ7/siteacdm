@@ -6,7 +6,7 @@ body,html {
     background:linear-gradient(#00000038, #ccc,#222,#ffffff);
     font-family: Arial, sans-serif;
     margin: 10;
-    padding: 0;
+    padding: 1;
 }
 
 .navbar {
@@ -199,20 +199,25 @@ main {
 .novidade h3 {
     margin-top: 0;
 }
+   /*--------Icones parte inferior ------------->*/
+
 
 .icon-whats {
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     margin: 20px;
 }
 
 .icon-whats-img {
-    padding: 30px;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 2px;
     background-color: transparent;
     width: 50px;
     right: auto;
 }
 
+     /*--------copyright ------------->*/
 .footer-copyright {
     background-color: #222;
     color: #ccc;
