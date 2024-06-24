@@ -1,162 +1,97 @@
-*{
+/* Estilos base */
+* {
+    box-sizing: border-box;
     text-decoration: none;
 }
 
-body,html {
-    background:linear-gradient(#00000038, #ccc,#222,#ffffff);
-    font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 0;
-}
-.navbar {
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px 20px;
-}
-
-.navbar-logo {
-    height: 50px;
-}
-
-.navbar-menu {
-    list-style: none;
+body, html {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-grow: 1; 
-}
-
-.navbar-menu li {
-    margin: 0 10px;
-}
-
-.navbar-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-}
-
-.navbar-menu a:hover {
-    border-radius: 5px;
-    background-color: #fff5f5;
-    color: #333;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.search-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px; 
-}
-
-.search-icon a {
-    color: transparent; 
-    text-decoration: none; 
-}
-
-.search-icon img {
-    border-radius: 20px;
-    height: 24px; 
-    width: 24px;  
-    cursor: pointer; 
-}
-
-.search-icon img:hover {
-    background-color: #555; 
-    border-radius: 50%; 
-}
-
-.find-me-text {
-    color: white; 
-    margin-left: 5px; 
-    font-size: 14px; 
-}
-
-span {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin: 5px;
-    padding: 3px;
-    padding-left: 27px;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 5px;
-}
-
-
-.inicio {
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #33333367;
-    margin: 20px;
-    border-radius: 10px;
-}
-.gif-contato {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px; 
-    border-radius: 20px;
-    height: 24px; 
-    width: 24px;  
-    cursor: pointer; 
-}
-
-
-.content {
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #00000096;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.content1 {
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.493);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-form {
+    font-family: Arial, sans-serif;
+    background-color: #585858;
     display: flex;
     flex-direction: column;
 }
 
-label {
-    margin-top: 10px;
-}
-
-input, textarea, button {
-    background-color: rgba(255, 255, 255, 0.555);
-    color: #333;
-    font-weight: bold;
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
+/*Menu navbar */
+.navbar {
+    height: 100vh;
+    width: 230px;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-button:hover {
-    background-color: #55555579;
+.navbar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.2s;
 }
+
+.navbar a:hover {
+    background-color: #57575752;
+    color: white;
+}
+
+
+.open-btn-menu {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+}
+
+.container {
+    margin-left: 250px;
+    transition: margin-left 0.5s;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/*Página */
+
+h1 {
+    text-align: center;
+    color: #ccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Ícones */
+.icon-whats {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.icon-whats a {
+    margin: 0 10px;
+}
+
+.icon-whats-img {
+    border-radius: 15px;
+    padding: 2px;
+    background-color: transparent;
+    width: 50px;
+}
+
+
+
+
+
+
 
 footer {
     background-color: #333;
@@ -211,7 +146,4 @@ footer {
     padding: 10px 0;
     font-size: 14px;
     margin-top: 20px;
-}
-#teste {
-    color: white;
 }

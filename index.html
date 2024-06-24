@@ -8,39 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <!--------------Menu de seleção inicio da página-->
-    <nav class="navbar">
-        <a href="./index.html"><img src="./image/logo-triangular.png" alt="Logo" class="navbar-logo"></a>
-        <ul class="navbar-menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./nossosatletas.html">Atleta</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="./contact.html">Contato</a></li>
-        </ul>
-        <div class="navbar-right">
-                                
-         <h3 class="texto-busca">
-            <a id="teste" href="https://www.google.com.br/maps/preview" target="_blank" class="search-icon">
-                <img src="./image/procurar.gif" alt="Ícone de Busca">
-            Encontre-nos</h3>
-            </a>
+    <!-- Navbar Lateral -->
+    <div id="myNavbar" class="navbar">
+        <a href="./index.html" class="styles-links-nav-bar">Inicio</a>
+        <a href="./nossosatletas.html" class="styles-links-nav-bar">Atletas</a>
+        <a href="./contact.html" class="styles-links-nav-bar">Contato</a>
+        <a href="./nossotime.html" class="styles-links-nav-bar">Professores</a>
+        <div class="icon-whats">
+            <a href="https://www.instagram.com.br"><img src="./image/instagram.png" alt="gif" class="icon-whats-img"></a>
+            <a href="https://facebook.com.br"><img src="./image/twitter.png" alt="gif" class="icon-whats-img"></a>
+        </div>
+    </div>
 
-        </div>       
-    </nav>
+    <button class="open-btn" onclick="toggleNav()">&#9776; Menu</button>
 
-        <!--------------Baner 1 no meio da pagina -->
+    <!-- Banner -->
     <div>
-        <img src="./image/dica-de-pilotagem-de-kart-.jpg" alt="Baner" class="img-Baner">
+        <img src="./image/dica-de-pilotagem-de-kart-.jpg" alt="Banner" class="img-Baner">
     </div>
 
     <div id="content" class="content">
-        <h2>NOSSAS<span id="parte2" class="parte2">NOVIDADES</span></h2>
+        <h2>NOSSAS <span id="parte2" class="parte2">NOVIDADES</span></h2>
 
-
-
-
-
-        <!--------------Parte das novidades-->
+        <!-- Parte das Novidades -->
         <main>
             <section id="novidades">
                 <h2>Novidades</h2>
@@ -58,23 +48,17 @@
                 </div>
             </section>
         </main>
-        
-        <h2 style="text-align: center; color: aliceblue;">Redes Sociais</h2>
 
-        <h2 class="icon-whats"> 
-            <a href="https://api.whatsapp.com/send?phone=5511999999999&text=%20Bem vindo, AcademiaFenix BP em que podemos te ajudar"><img src="./image/telefone.png" alt="gif" a class="icon-whats-img">
-            </a>
-            <a href="https://www.instagram.com"><img src="./image/instagram.png" alt="gif" a class="icon-whats-img">
-    
-            <a href="www.facebook.com/"><img src="./image/logo-do-facebook.png" alt="gif" a class="icon-whats-img">
-            </a>
-            <a href="https://x.com/?lang=pt-br"><img src="./image/twitter.png" alt="gif" a class="icon-whats-img">
-            </a>
+        <h2 style="text-align: center; color: rgb(0, 0, 0);">Redes Sociais</h2>
+
+        <h2 class="icon-whats">
+            <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Bem vindo, AcademiaFenix BP em que podemos te ajudar"><img src="./image/telefone.png" alt="gif" class="icon-whats-img"></a>
+            <a href="https://www.instagram.com"><img src="./image/instagram.png" alt="gif" class="icon-whats-img"></a>
+            <a href="www.facebook.com/"><img src="./image/logo-do-facebook.png" alt="gif" class="icon-whats-img"></a>
+            <a href="https://x.com/?lang=pt-br"><img src="./image/twitter.png" alt="gif" class="icon-whats-img"></a>
         </h2>
-    
-    
-    
-        <!--------------Rodape da página-->
+
+        <!-- Rodapé da Página -->
         <footer>
             <div class="footer-container">
                 <div class="footer-section">
@@ -82,7 +66,7 @@
                     <ul>
                         <li>Email: contato@exemplo.com</li>
                         <li>Telefone: (11) 1234-5678</li>
-                        <li>Endereço: Rua Exemplo, 123, São Paulo, SP</li>
+                        <li><a href="https://www.google.com.br/maps/preview">Endereço: Rua Exemplo, 123, São Paulo, SP</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -94,16 +78,13 @@
                         <li><a href="./parcerias.html">Parcerias</a></li>
                     </ul>
                 </div>
-
             </div>
             <div class="footer-copyright">
                 &copy; 2023 Seu Nome ou Sua Empresa. Todos os direitos reservados.
             </div>
         </footer>
     </div>
-    
+
+    <script src="./menu.js"></script>
 </body>
-
-<script src="./menu.js"></script>
-
 </html>

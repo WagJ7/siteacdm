@@ -1,135 +1,83 @@
-*{
+/* Estilos base */
+* {
+    box-sizing: border-box;
     text-decoration: none;
 }
 
-body,html {
-    background:linear-gradient(#00000038, #ccc,#222,#ffffff);
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 1;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
-    width: 95%;
+    height: 100vh;
+    width: 0;
     position: fixed;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    top: 0;
+    left: 0;
     background-color: #333;
-    padding: 10px 20px;
-
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.navbar-logo {
-    height: 50px;
-}
-
-.navbar-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-grow: 1; 
-}
-
-.navbar-menu li {
-    margin: 0 10px;
-}
-
-.navbar-menu a {
-    color: white;
+.navbar a {
+    padding: 10px 15px;
     text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
+    font-size: 18px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.2s;
 }
 
-.navbar-menu a:hover {
-    border-radius: 5px;
-    background-color: #fff5f5;
-    color: #333;
+.navbar a:hover {
+    background-color: #575757;
+    color: white;
 }
 
-.navbar-right {
-    display: flex;
-    align-items: center;
+.open-btn {
+    overflow-x: hidden;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
 }
 
-.search-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px; 
+.container {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    width: 100%;
+    margin-left: 0;
+    position: fixed;
 }
 
-.search-icon a {
-    color: transparent; 
-    text-decoration: none; 
-}
-
-.search-icon img {
-    border-radius: 20px;
-    height: 24px; 
-    width: 24px;  
-    cursor: pointer; 
-}
-
-.search-icon img:hover {
-    background-color: #555; 
-    border-radius: 50%; 
-}
-
-.find-me-text {
-    color: white; 
-    margin-left: 5px; 
-    font-size: 14px; 
-}
-
-span {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin: 5px;
-    padding: 3px;
-    padding-left: 27px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-}
-    /* Ajuste Imagem Banner*/
 .img-Baner {
-    background-color: transparent;
-    padding-top: 6%;
-
-
-    
+    width: 100%;
     border-radius: 10px;
 }
 
 .content {
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
 }
- /* stilo da letra do span acima do baner */
+
 .parte2 {
     color: brown;
     background-color: transparent;
 }
 
-    /* stilos do rodape da página inicio */
-.rodape {
-    border-radius: 5px;
-    background-color: #000000a1;
-    justify-content: end;
-    text-align: justify;
-    text-align: center;
-    margin: 2px;
-    padding: 5px;
-    list-style: none;
-}
-.rodape a {
-    color: rgb(0, 0, 0);
-    padding: 2px;
-}
-
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -172,7 +120,15 @@ footer {
     text-decoration: underline;
 }
 
-        /* stilos da parte de novidade */
+.footer-copyright {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Novidades */
 main {
     padding: 20px;
 }
@@ -182,6 +138,7 @@ main {
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
+    color: black;
 }
 
 #novidades h2 {
@@ -194,110 +151,35 @@ main {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
+    color: black;
 }
 
 .novidade h3 {
     margin-top: 0;
 }
-   /*--------Icones parte inferior ------------->*/
 
-
+/* Ícones */
 .icon-whats {
-    justify-content: space-between;
     display: flex;
+    justify-content: center;
     margin: 20px;
+}
+
+.icon-whats a {
+    margin: 0 10px;
 }
 
 .icon-whats-img {
     border-radius: 15px;
-    justify-content: space-between;
     padding: 2px;
     background-color: transparent;
     width: 50px;
-    right: auto;
-}
-
-     /*--------copyright ------------->*/
-.footer-copyright {
-    background-color: #222;
-    color: #ccc;
-    padding: 10px 0;
-    font-size: 14px;
-    margin-top: 20px;
 }
 
 
-/* stilo menu */
-
-
-.menu {
-    display: flex;display: block;
-    position: fixed;
-    height: 300px;
-    width: 300px;
-    left: 50%;
-    top: 4%;    
-}
-
-.menu-item {
+.img-maps {
+    border-radius: 15px;
+    padding: 2px;
     background-color: transparent;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    text-align: center;
-    border: none;
-    outline: none;
-    width: 100%;
-    transition: background-color 0.4s;
-    font-size: 18px;
-}
-
-.menu-item:hover {
-    background-color: #504f4f00;
-}
-
-.menu-content {
-    text-align: end;
-    border-radius: 8px;
-    display: none;
-    background-color: #332c2ce3;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.menu-content a {
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    color: rgb(255, 255, 255);
-    scrollbar-shadow-color: #222;
-    border: 1px solid#000000;
-}
-
-.menu-content a:hover {
-    background-color: #00000038;
-}
-
-.menu-item.active + .menu-content {
-    display: block;
-    max-height: 500px; /* Ajuste conforme necessário */
-}
-
-.icon-menu {
-    height: 25px; 
-    width: 25px;  
-    cursor: pointer; 
-}
-
-.texto-busca {
-    text-align: end;
-    padding: 5px 15px;
-    background-color: #cccccc00;
-    margin-right: 10px;
-    border-radius: 8px;
-    margin: 0%;
-}
-
-#teste {
-    color: white;
+    width: 30px;
 }

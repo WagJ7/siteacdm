@@ -3,25 +3,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
-            console.log('Item clicked:', this); // Depuração
-
-            // Toggle active class for the clicked item
             this.classList.toggle('active');
-
-            // Get the next sibling element, which should be the .menu-content div
             const content = this.nextElementSibling;
-            console.log('Content element:', content); // Depuração
-
-            // Check if the content is currently displayed
             if (content.style.maxHeight) {
-                // If it is, hide it
                 content.style.maxHeight = null;
-                console.log('Content hidden'); // Depuração
             } else {
-                // Otherwise, show it
                 content.style.maxHeight = content.scrollHeight + "px";
-                console.log('Content shown'); // Depuração
             }
         });
     });
 });
+
+function toggleNav() {
+    const navbar = document.getElementById("myNavbar");
+    const container = document.querySelector(".container");
+    const openBtn = document.querySelector(".open-btn");
+    if (navbar.style.width === "0px" || navbar.style.width === "") {
+        navbar.style.width = "230px";
+        container.style.marginLeft = "230px";
+        openBtn.innerHTML = "&#9776; Fechar Menu";
+    } else {
+        navbar.style.width = "0";
+        container.style.marginLeft = "0";
+        openBtn.innerHTML = "&#9776; Abrir Menu";
+    }
+}
